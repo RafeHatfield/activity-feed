@@ -1,0 +1,7 @@
+<div class="activity">
+	<a href="<%= activity.permalink %>" target="_top">
+		<%= image_tag(activity.activity_type.thumbnail_url) %>
+		<%= activity.message %><br/>
+		<span class="time"><%= time_ago_in_words(activity.created_at, true) %> ago.</span>
+	</a>
+</div>

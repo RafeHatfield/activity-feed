@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Thumbnail:</b>
+  <%= image_tag @activity_type.thumbnail_url %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @activity_type.name %>
+</p>
+
+<p>
+  <b>Thumbnail name:</b>
+  <%= @activity_type.thumbnail_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_activity_type_path(@activity_type) %> |
+<%= link_to 'Back', activity_types_path %>

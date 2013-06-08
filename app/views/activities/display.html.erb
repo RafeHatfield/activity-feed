@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag 'rails_activity_feed' %>
+<%= javascript_include_tag 'jquery', 'rails', 'application' %>
+
+<div class="rails_activity_feed_box" id="rails_activity_feed_box">
+</div>
+
+<script type="text/javascript">	
+		
+	var UPDATE_INTERVAL_SECONDS = 15;
+
+	update_feed();	
+	
+	setInterval(function(){
+		update_feed();
+	}, UPDATE_INTERVAL_SECONDS*1000);
+
+</script>

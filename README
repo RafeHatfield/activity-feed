@@ -1,0 +1,12 @@
+== To setup on your system run
+% bundle install
+% rails g rspec:install
+% rails g jquery:install
+% rake db:create:all
+
+== To add seeded data (e.g. suite101 activity_types)
+% rake db:seed
+
+== To annotate models
+% annotate
+
